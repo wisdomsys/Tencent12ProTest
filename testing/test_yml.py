@@ -8,6 +8,6 @@
 '''
 import yaml
 
-with open('datas/work.yml') as f:
+with open('dates/work.yml') as f:
     print(yaml.safe_load(f))
 
