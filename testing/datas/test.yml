@@ -1,0 +1,12 @@
+#& 锚点和 * 别名，可以用来引用:
+defaults: &defaults
+  adapter:  postgres
+  host:     localhost
+
+development:
+  database: myapp_development
+  <<: *defaults
+
+test:
+  database: myapp_test
+  <<: *defaults
