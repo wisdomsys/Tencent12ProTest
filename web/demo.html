@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-3.1.1.min.js" ></script>
+    <script>
+    $(function () {
+            $('#clear').click(function () {
+                $('.text_content').val('');
+            });
+            $('#click').click(function(){
+                $('.text_content').val('[CLICK]');
+            });
+            $('#double_click').dblclick(function() {
+                let text_value = $('.text_content').val()+'[double_click]';
+                $('.text_content').val(text_value);
+            });
+            $('.right_click').mousedown(function () {
+                let text_value = $('.text_content').val()+'[right_click]';
+                $('.text_content').val(text_value);
+            })
+        })
+    </script>
+
+</head>
+<body>
+<textarea rows="10" cols="30" class="text_content"> 我是一个文本框。</textarea>
+<br>
+<input type="button" value="Clear" id="clear">
+<br>
+<button id="double_click">double click</button>
+<br>
+<input type="button" value="click" id="click">
+<br>
+<div class="right_click" style="border:2px solid; display: inline-block">right_click</div>
+</body>
+</html>
