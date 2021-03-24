@@ -6,7 +6,6 @@
 import shelve
 from time import sleep
 from selenium.webdriver.common.by import By
-
 from selenium_wework_main.page.add_member import AddMember
 from selenium_wework_main.page.base_page import BasePage
 
@@ -21,6 +20,7 @@ class Main(BasePage):
 
     def goto_menu_contacts(self):
         self.find(By.ID, 'menu_contacts').click()
-        sleep(2)
+        locator = (By.CSS_SELECTOR, '.js_has_member>div:nth-child(1)>a:nth-child(2)')
+        self.wait_for_click(locator)
         self.find(By.CSS_SELECTOR, '.js_has_member>div:nth-child(1)>a:nth-child(2)').click()
         return AddMember(self._driver)

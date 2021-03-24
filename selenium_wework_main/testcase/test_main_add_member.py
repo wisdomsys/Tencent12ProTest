@@ -13,7 +13,6 @@ class TestMainAddMembers:
         self.main = Main()
 
     def test_main_addmember(self):
-        sleep(2)
         add_member = self.main.goto_menu_contacts()
         add_member.add_member()
-        assert 'alex' in add_member.get_member()
+        assert add_member.get_member('alex')
