@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
-'''
-@Date    ：2021-03-24 17:40 
-'''
+"""
+@Date    ：2021-03-24 17:40
+"""
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.remote.webdriver import WebDriver
@@ -24,3 +24,9 @@ class BasePage:
 
         if self._base_url != '':
             self._driver.get(self._base_url)
+
+    def find(self, by, locator):
+        return self._driver.find_element(by, locator)
+
+    def finds(self, by, locator):
+        return self._driver.find_elements(by, locator)

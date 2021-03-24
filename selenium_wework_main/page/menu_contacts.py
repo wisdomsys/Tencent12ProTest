@@ -14,6 +14,6 @@ class MenuContacts:
         self._driver = driver
 
     def menu_contacts(self):
-        # self._driver.find_element(By.CSS_SELECTOR, '.js_has_member>div:nth-child(1) .js_add_member').click()
+        # self.find(By.CSS_SELECTOR, '.js_has_member>div:nth-child(1) .js_add_member').click()
 
         return AddMember(self._driver)
