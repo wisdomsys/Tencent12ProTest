@@ -20,7 +20,17 @@ class Main(BasePage):
 
     def goto_menu_contacts(self):
         self.find(By.ID, 'menu_contacts').click()
-        locator = (By.CSS_SELECTOR, '.js_has_member>div:nth-child(1)>a:nth-child(2)')
-        self.wait_for_click(locator)
-        self.find(By.CSS_SELECTOR, '.js_has_member>div:nth-child(1)>a:nth-child(2)').click()
+
+        # locator = (By.CSS_SELECTOR, '.js_has_member>div:nth-child(1)>a:nth-child(2)')
+        # self.wait_for_click(locator)
+
+        # 方法二：
+        def wait_add_member(x):
+            elements_len = len(self.finds(By.CSS_SELECTOR, '#username'))
+            if elements_len < 0:
+                self.find(By.CSS_SELECTOR, '.js_has_member>div:nth-child(1)>a:nth-child(2)').click()
+            return elements_len > 0
+
+        self.wait_for_element(wait_add_member)
+
         return AddMember(self._driver)
