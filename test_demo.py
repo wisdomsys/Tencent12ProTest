@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
-'''
-@Date    ：2021-03-23 17:46 
-'''
+"""
+@Date    ：2021-03-23 17:46
+"""
 import shelve
 from time import sleep
 
@@ -11,7 +11,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
 
-class TestDemo():
+class TestDemo:
     def setup_method(self):
         options = Options()
         options.debugger_address = '127.0.0.1:9222'
@@ -65,5 +65,4 @@ class TestDemo():
         self.driver.get('https://work.weixin.qq.com/wework_admin/frame#index')
         sleep(2)
         db.close()
-
 
