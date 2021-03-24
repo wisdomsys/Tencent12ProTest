@@ -8,10 +8,10 @@ from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 
+from selenium_wework_main.page.base_page import BasePage
 
-class AddMember:
-    def __init__(self, driver: WebDriver):
-        self._driver = driver
+
+class AddMember(BasePage):
 
     def add_member(self):
         # send_keys
