@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2c4c4b71-6c8f-4452-a09c-649add5cbf5d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="3cb5d749-4ff1-4efe-9f95-0a76abee532c" />
+  <component name="ProjectId" id="1qPXMdG190nRSlxhhjHYvdnXd7W" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python tests.pytest for test_onlock.TestOnLock.test_on_locking">
+    <configuration name="pytest for test_case.TestDW.test_attr" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Tencent12ProTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_case.TestDW.test_attr&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_onlock.TestOnLock.test_on_locking" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Tencent12ProTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_onlock.TestOnLock.test_on_locking&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_touchAction.TestDW.test_touch" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Tencent12ProTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_touchAction.TestDW.test_touch&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_element.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Tencent12ProTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/app/test_element.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_onlock.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Tencent12ProTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/app/test_onlock.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest for test_onlock.TestOnLock.test_on_locking" />
+        <item itemvalue="Python tests.pytest in test_onlock.py" />
+        <item itemvalue="Python tests.pytest for test_touchAction.TestDW.test_touch" />
+        <item itemvalue="Python tests.pytest for test_case.TestDW.test_attr" />
+        <item itemvalue="Python tests.pytest in test_element.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c4c4b71-6c8f-4452-a09c-649add5cbf5d" name="Default Changelist" comment="" />
+      <created>1616982151689</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616982151689</updated>
+      <workItem from="1616982152946" duration="377000" />
+      <workItem from="1616982546832" duration="885000" />
+      <workItem from="1616994592576" duration="100000" />
+      <workItem from="1617014196687" duration="3000" />
+      <workItem from="1617069441382" duration="2022000" />
+      <workItem from="1617087955891" duration="14552000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="502" y="312" key="#Notifications" timestamp="1617089797060">
+      <screen x="0" y="23" width="1680" height="979" />
+    </state>
+    <state x="430" y="268" key="#Notifications/0.23.1440.829/1440.23.1920.1057@0.23.1440.829" timestamp="1616983108852" />
+    <state x="502" y="312" key="#Notifications/0.23.1680.979/1680.23.1920.1057@0.23.1680.979" timestamp="1617089797060" />
+    <state x="470" y="194" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1617089788294">
+      <screen x="0" y="23" width="1680" height="979" />
+    </state>
+    <state x="470" y="194" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1680.979/1680.23.1920.1057@0.23.1680.979" timestamp="1617089788294" />
+    <state width="1638" height="264" key="GridCell.Tab.0.bottom" timestamp="1617106515205">
+      <screen x="0" y="23" width="1680" height="979" />
+    </state>
+    <state width="1638" height="264" key="GridCell.Tab.0.bottom/0.23.1680.979/1680.23.1920.1057@0.23.1680.979" timestamp="1617106515205" />
+    <state width="1638" height="264" key="GridCell.Tab.0.center" timestamp="1617106515205">
+      <screen x="0" y="23" width="1680" height="979" />
+    </state>
+    <state width="1638" height="264" key="GridCell.Tab.0.center/0.23.1680.979/1680.23.1920.1057@0.23.1680.979" timestamp="1617106515205" />
+    <state width="1638" height="264" key="GridCell.Tab.0.left" timestamp="1617106515204">
+      <screen x="0" y="23" width="1680" height="979" />
+    </state>
+    <state width="1638" height="264" key="GridCell.Tab.0.left/0.23.1680.979/1680.23.1920.1057@0.23.1680.979" timestamp="1617106515204" />
+    <state width="1638" height="264" key="GridCell.Tab.0.right" timestamp="1617106515205">
+      <screen x="0" y="23" width="1680" height="979" />
+    </state>
+    <state width="1638" height="264" key="GridCell.Tab.0.right/0.23.1680.979/1680.23.1920.1057@0.23.1680.979" timestamp="1617106515205" />
+    <state x="258" y="86" key="SettingsEditor" timestamp="1617095217341">
+      <screen x="0" y="23" width="1680" height="979" />
+    </state>
+    <state x="221" y="76" key="SettingsEditor/0.23.1440.829/1440.23.1920.1057@0.23.1440.829" timestamp="1616982606045" />
+    <state x="258" y="86" key="SettingsEditor/0.23.1680.979/1680.23.1920.1057@0.23.1680.979" timestamp="1617095217341" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_in_test_0330_py.coverage" NAME="pytest in test_0330.py Coverage Results" MODIFIED="1617093456730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_element_TestDW.coverage" NAME="pytest for test_element.TestDW Coverage Results" MODIFIED="1617095112928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_touchAction_TestDW_test_touch.coverage" NAME="pytest for test_touchAction.TestDW.test_touch Coverage Results" MODIFIED="1617104647616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_onlock_TestOnLock_test_on_locking.coverage" NAME="pytest for test_onlock.TestOnLock.test_on_locking Coverage Results" MODIFIED="1617106515193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_case_TestDW_test_attr.coverage" NAME="pytest for test_case.TestDW.test_attr Coverage Results" MODIFIED="1617102001310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_in_test_appium_py.coverage" NAME="pytest in test_appium.py Coverage Results" MODIFIED="1617090871818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_in_test_element_py.coverage" NAME="pytest in test_element.py Coverage Results" MODIFIED="1617099200609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_in_test_onlock_py.coverage" NAME="pytest in test_onlock.py Coverage Results" MODIFIED="1617105553276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+  </component>
+</project>
