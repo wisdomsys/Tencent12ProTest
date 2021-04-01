@@ -1,5 +1,8 @@
 from appium import webdriver
+from appium.webdriver.common.mobileby import MobileBy
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support.wait import WebDriverWait
 
 
 class TestSnowXpath:
@@ -23,6 +26,18 @@ class TestSnowXpath:
         # self.driver.find_element(By.XPATH,"//*[@resource-id='com.xueqiu.android:id/stockCode' and @text=09988]")
         path = "//*[@text='09988']/../../..//*[@resource-id='com.xueqiu.android:id/current_price']"
         # path = "//*[@text='09988']"
-        current_price = self.driver.find_element(By.XPATH,path).text
-        print(f'打印一下当前09988股票的价格是：{current_price}')
-        assert float(current_price) > 200
+
+        # 方法一
+        # current_price = self.driver.find_element(By.XPATH, path).text
+        # print(f'打印一下当前09988股票的价格是：{current_price}')
+
+        # 方法二
+        locator = (MobileBy.XPATH, path)
+        # WebDriverWait(self.driver, 10).until(expected_conditions.element_to_be_clickable(locator))
+        # ele = self.driver.find_element(*locator).text
+
+        # 方法三
+        ele = WebDriverWait(self.driver, 10).until(lambda x: x.find_element(*locator)).text
+        print(ele)
+        current_price = float(ele)
+        assert current_price > 200
