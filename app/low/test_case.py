@@ -21,21 +21,6 @@ class TestDW:
     def teardown(self):
         self.driver.quit()
 
-    def test_search(self):
-        print('搜索测试用例')
-        """
-        打开雪球app
-        点击搜索输入框
-        向搜索输入框里面输入'阿里巴巴'
-        在搜索结果里选择阿里巴巴然后进行点击
-        获取这只香港 阿里巴巴的股价，并判断这只股价的价格>200
-        """
-        self.driver.find_element(By.ID, 'com.xueqiu.android:id/home_search').click()
-        self.driver.find_element(By.ID, 'com.xueqiu.android:id/search_input_text').send_keys('阿里巴巴').click()
-        self.driver.find_element(By.XPATH, "//*[@resource-id='com.xueqiu.android:id/name' and @text='阿里巴巴']").click()
-        current_price = float(self.driver.find_element(By.ID, 'com.xueqiu.android:id/current_price').text)
-        assert current_price < 225
-
     def test_attr(self):
         """
         打开雪球app

@@ -49,11 +49,11 @@ class TestSnowXpath:
         # 'new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text("").instance(0));'
 
     def test_scroll_find_element(self):
-        self.driver.find_element(By.XPATH,'//*[@text="推荐"]').click()
+        # self.driver.find_element(By.XPATH,'//*[@text="推荐"]').click()
         self.driver.find_element_by_android_uiautomator('new UiScrollable(new UiSelector().'
                                                         'scrollable(true).instance(0)).'
-                                                        'scrollIntoView(new UiSelector().text("villike").'
-                                                        'instance(0))')
+                                                        'scrollIntoView(new UiSelector().text("allSBnow").'
+                                                        'instance(1));')
 
 
         # path = 'new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text("babygirl").instance(0));'
