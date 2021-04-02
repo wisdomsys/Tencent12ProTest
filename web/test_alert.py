@@ -22,10 +22,13 @@ class TestAlert(Base):
         # 方法一
         action = ActionChains(self.driver)
         action.drag_and_drop(draggable, droppable).perform()
+
         # 方法二
         # action.click_and_hold(draggable).release(droppable).perform()
+
         # 方法三
         # action.click_and_hold(draggable).move_to_element(droppable).release().perform()
+
         self.driver.switch_to.alert.accept()
         self.driver.switch_to.parent_frame()
         # self.driver.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]').click()
