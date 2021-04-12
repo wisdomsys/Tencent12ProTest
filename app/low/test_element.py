@@ -32,8 +32,8 @@ class TestDW:
         """
         self.driver.find_element(By.ID, 'com.xueqiu.android:id/home_search').click()
         self.driver.find_element(By.ID, 'com.xueqiu.android:id/search_input_text').send_keys('阿里巴巴').click()
-        self.driver.find_element(By.XPATH,"//*[@resource-id='com.xueqiu.android:id/name' and @text='阿里巴巴']").click()
-        current_price = float(self.driver.find_element(By.ID,'com.xueqiu.android:id/current_price').text)
+        self.driver.find_element(By.XPATH, "//*[@resource-id='com.xueqiu.android:id/name' and @text='阿里巴巴']").click()
+        current_price = float(self.driver.find_element(By.ID, 'com.xueqiu.android:id/current_price').text)
         assert current_price < 225
 
         sleep(3)

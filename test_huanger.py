@@ -30,7 +30,7 @@ class TestHunger:
         点击超级吃货卡
         点击全部任务
         获取所有逛逛任务
-        浏览每个逛逛任务
+        浏览每个逛逛任务，并打印任务名称
         完成
         """
         self.driver.find_element(MobileBy.XPATH, '//XCUIElementTypeButton[@name="我的"]').click()
@@ -38,32 +38,56 @@ class TestHunger:
                                  '(//XCUIElementTypeOther[@name="a2ogi.14291182.Chihuoka.1"])[1]').click()
         self.driver.switch_to.context(self.driver.contexts[-1])
         # 滑动
-
         # self.driver.execute_script("mobile:dragFromToForDuration",
         #                            {"duration": 1, "element": None, "fromX": 1000, "fromY": 650, "toX": 100,
         #                             "toY": 100})
         self.driver.find_element(MobileBy.XPATH, '//XCUIElementTypeStaticText[@name="查看全部任务"]').click()
-        self.driver.switch_to.context(self.driver.contexts[-1])
-        # ele = '//XCUIElementTypeStaticText[@name="去浏览" or @name="去完成"]'
+
+        # self.driver.switch_to.context(self.driver.contexts[-1])
         ele = '//XCUIElementTypeOther[@name="做任务赚吃货豆"]/XCUIElementTypeOther[8]/XCUIElementTypeOther'
         task_list = self.driver.find_elements(MobileBy.XPATH, ele)
         num = len(task_list)
-        print('num是', num)
+        print('任务数是', num)
         # 因为饿了么会自动更新任务列表，所以不需要每个使用for循环+1的方法
-        # 任务数剩余比较少的时候 ，会变成去完成
-        go_read = (MobileBy.XPATH, '//XCUIElementTypeStaticText[@name="去浏览"]')
-        go_doing = (MobileBy.XPATH, '//XCUIElementTypeStaticText[@name="去完成"]')
-        for i in task_list:
-            # if self.driver.find_element(*go_read):
-            #     self.driver.find_element(*go_read).click()
-            # elif self.driver.find_element(*go_doing):
-            self.driver.find_element(*go_doing).click()
+        # 任务存在去浏览和去完成两个状态，所有需要判断哪种元素存在
+        go_to_read = '//*[@name="去浏览"]'
+        go_to_doing = '//*[@name="去完成"]'
+        go_read = self.driver.find_element(MobileBy.XPATH, go_to_read)
+        go_doing = self.driver.find_element(MobileBy.XPATH, go_to_doing)
+        # title = (MobileBy.XPATH, f'{go_to_read}/../../XCUIElementTypeOther[2]')
+        while True:
+            # try:
+            #     if go_read:
+            #         go_read.click()
+            #         print(self.driver.find_element(MobileBy.XPATH, f'{go_to_read}/../../XCUIElementTypeOther[2]'))
+            #     elif go_doing:
+            #         go_doing.click()
+            #         print(self.driver.find_element(MobileBy.XPATH, f'{go_to_doing}/../../XCUIElementTypeOther[2]'))
+            #     else:
+            #         print('任务已经完成')
+            #         break
+            # except Exception as e:
+            #     print(e)
+            if go_read:
+                go_read.click()
+                # print(self.driver.find_element(MobileBy.XPATH, f'{go_to_read}/../../XCUIElementTypeOther[2]'))
+            elif go_doing:
+                go_doing.click()
+                # print(self.driver.find_element(MobileBy.XPATH, f'{go_to_doing}/../../XCUIElementTypeOther[2]'))
+            else:
+                print('任务已经完成')
+                break
             sleep(17)
-            local = (MobileBy.XPATH, '//*[@name="返回"]')
-            WebDriverWait(self.driver, 10).until(expected_conditions.visibility_of_all_elements_located(local))
-            self.driver.find_element(*local).click()
-
-
+            back = self.driver.find_element(MobileBy.XPATH, '//*[@name="返回"]')
+            # back = self.driver.find_element(MobileBy.XPATH, '//XCUIElementTypeButton[@name="返回"]')
+            back_two = self.driver.find_element(MobileBy.XPATH, '//*[@name="任务完成点击返回"]')
+            # self.driver.switch_to.context(self.driver.contexts[-1])
+            if back:
+                back.click()
+            else:
+                back_two.click()
+            # WebDriverWait(self.driver, 10).until(expected_conditions.visibility_of_all_elements_located(local))
+            # self.driver.find_element(*local).click()
 
         # for i in task_list:
         #     j += 1
