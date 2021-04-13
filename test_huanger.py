@@ -2,12 +2,13 @@ from time import sleep
 
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
+from appium.webdriver.common.touch_action import TouchAction
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 
 class TestHunger:
-    def setup(self):
+    def setup_class(self):
         desired_caps = {
             "platformName": "iOS",
             "platformVersion": "14.3",
@@ -20,8 +21,16 @@ class TestHunger:
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
         self.driver.implicitly_wait(10)
 
-    def teardown(self):
+    def teardown_class(self):
         self.driver.quit()
+
+    def setup(self):
+        print('这是setup')
+
+    def teardown(self):
+        # 返回
+        # self.driver.find_element()
+        pass
 
     def test_hunger_add_coin(self):
         """
@@ -36,7 +45,7 @@ class TestHunger:
         self.driver.find_element(MobileBy.XPATH, '//XCUIElementTypeButton[@name="我的"]').click()
         self.driver.find_element(MobileBy.XPATH,
                                  '(//XCUIElementTypeOther[@name="a2ogi.14291182.Chihuoka.1"])[1]').click()
-        self.driver.switch_to.context(self.driver.contexts[-1])
+        # self.driver.switch_to.context(self.driver.contexts[-1])
         # 滑动
         # self.driver.execute_script("mobile:dragFromToForDuration",
         #                            {"duration": 1, "element": None, "fromX": 1000, "fromY": 650, "toX": 100,
@@ -47,7 +56,6 @@ class TestHunger:
         ele = '//XCUIElementTypeOther[@name="做任务赚吃货豆"]/XCUIElementTypeOther[8]/XCUIElementTypeOther'
         task_list = self.driver.find_elements(MobileBy.XPATH, ele)
         num = len(task_list)
-        print('任务数是', num)
         # 因为饿了么会自动更新任务列表，所以不需要每个使用for循环+1的方法
         # 任务存在去浏览和去完成两个状态，所有需要判断哪种元素存在
         go_to_read = '//*[@name="去浏览"]'
@@ -78,16 +86,17 @@ class TestHunger:
                 print('任务已经完成')
                 break
             sleep(17)
+            print(self.driver.get_window_size())
+            # TouchAction(self.driver).press(el=None, x=20, y=200).move_to(el=None, x=0,
+            #                                                              y=200).release().perform()
             back = self.driver.find_element(MobileBy.XPATH, '//*[@name="返回"]')
             # back = self.driver.find_element(MobileBy.XPATH, '//XCUIElementTypeButton[@name="返回"]')
             back_two = self.driver.find_element(MobileBy.XPATH, '//*[@name="任务完成点击返回"]')
-            # self.driver.switch_to.context(self.driver.contexts[-1])
+            self.driver.switch_to.context(self.driver.contexts[-1])
             if back:
                 back.click()
             else:
                 back_two.click()
-            # WebDriverWait(self.driver, 10).until(expected_conditions.visibility_of_all_elements_located(local))
-            # self.driver.find_element(*local).click()
 
         # for i in task_list:
         #     j += 1
