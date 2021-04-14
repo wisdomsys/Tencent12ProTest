@@ -10,4 +10,4 @@ class Main(BasePage):
     def goto_windows(self):
         self.find(By.ID, 'com.xueqiu.android:id/post_status').click()
         self.find(By.ID, 'com.xueqiu.android:id/home_search').click()
-# self.find(By.ID, 'com.xueqiu.android:id/iv_close').click()
+        # self.find(By.ID, 'com.xueqiu.android:id/iv_close').click() # 弹窗关闭
