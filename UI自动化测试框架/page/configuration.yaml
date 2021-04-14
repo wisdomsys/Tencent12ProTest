@@ -1,0 +1,12 @@
+caps:
+  platformName: Android
+  platformVersion: !!str 10
+  deviceName: P30
+  udid: Q5S5T19424004010
+  appPackage: com.xueqiu.android
+  appActivity: .view.WelcomeActivityAlias
+  noReset: True
+  skipDeviceInitialization: True
+  unicodeKeyboard: True
+  resetKeyboard: True
+  skipServerInstallation: True
