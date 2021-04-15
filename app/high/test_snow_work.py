@@ -1,6 +1,7 @@
 from appium import webdriver
 import pytest
 from appium.webdriver.common.mobileby import MobileBy
+from selenium.webdriver.common.by import By
 
 
 class TestSnowWork:
@@ -18,6 +19,7 @@ class TestSnowWork:
         }
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
         self.driver.implicitly_wait(10)
+        self.driver.find_element(By.ID,'')
 
     def teardown_class(self):
         print('teardown')
