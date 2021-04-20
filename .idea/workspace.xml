@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2c4c4b71-6c8f-4452-a09c-649add5cbf5d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/high/test_snow_work.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/high/test_snow_work.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appium_xueqiu/page/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/appium_xueqiu/page/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI自动化测试框架/page/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/UI自动化测试框架/page/main.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_xueqiu/page/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/appium_xueqiu/page/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_xueqiu/page/market.py" beforeDir="false" afterPath="$PROJECT_DIR$/appium_xueqiu/page/market.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_xueqiu/page/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/appium_xueqiu/page/search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_xueqiu/testcase/test_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/appium_xueqiu/testcase/test_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_huanger.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_huanger.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/appium_xueqiu/page" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -56,75 +60,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_huanger.TestHunger">
-    <configuration name="pytest for test_huanger.TestHunger" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Tencent12ProTest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_huanger.TestHunger&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_huanger.TestHunger.test_hunger_add_coin" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Tencent12ProTest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_huanger.TestHunger.test_hunger_add_coin&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_main.TestMAin.test_main" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Tencent12ProTest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UI自动化测试框架/test_case" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_main.TestMAin.test_main&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_main.TestMAin.test_windows" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Tencent12ProTest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UI自动化测试框架/test_case" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_main.TestMAin.test_windows&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.pytest for test_search.TestSearch.test_search">
     <configuration name="pytest for test_search.TestSearch.test_search" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Tencent12ProTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,13 +78,27 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_wrapper.test_wrapper" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Tencent12ProTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/appium_xueqiu/testcase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_wrapper.test_wrapper&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_huanger.TestHunger" />
-        <item itemvalue="Python tests.pytest for test_huanger.TestHunger.test_hunger_add_coin" />
         <item itemvalue="Python tests.pytest for test_search.TestSearch.test_search" />
-        <item itemvalue="Python tests.pytest for test_main.TestMAin.test_windows" />
-        <item itemvalue="Python tests.pytest for test_main.TestMAin.test_main" />
+        <item itemvalue="Python tests.pytest for test_wrapper.test_wrapper" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +121,9 @@
       <workItem from="1618216137846" duration="12944000" />
       <workItem from="1618293997909" duration="149000" />
       <workItem from="1618294188147" duration="21187000" />
-      <workItem from="1618379714780" duration="20921000" />
+      <workItem from="1618379714780" duration="31828000" />
+      <workItem from="1618888136307" duration="5766000" />
+      <workItem from="1618904668203" duration="4767000" />
     </task>
     <servers />
   </component>
@@ -192,13 +144,16 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_ui_automator_TestSnowXpath_test_scroll_find_element.coverage" NAME="pytest for test_ui_automator.TestSnowXpath.test_scroll_find_element Coverage Results" MODIFIED="1617257361656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_wrapper_test_wrapper.coverage" NAME="pytest for test_wrapper.test_wrapper Coverage Results" MODIFIED="1618908251649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_xueqiu/testcase" />
     <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_case_TestDW_test_attr.coverage" NAME="pytest for test_case.TestDW.test_attr Coverage Results" MODIFIED="1617102001310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
     <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_wechat_TestWechat_test_add_contact.coverage" NAME="pytest for test_wechat.TestWechat.test_add_contact Coverage Results" MODIFIED="1618297687031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/high" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$tets.coverage" NAME="tets Coverage Results" MODIFIED="1618553779967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI自动化测试框架/page" />
     <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_hamcrest_TestHamcrest_test_case.coverage" NAME="pytest for test_hamcrest.TestHamcrest.test_case Coverage Results" MODIFIED="1617262697868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/high" />
     <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_snow_work_TestSnowWork.coverage" NAME="pytest for test_snow_work.TestSnowWork Coverage Results" MODIFIED="1618281918507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/high" />
     <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_main_TestMAin_test_windows.coverage" NAME="pytest for test_main.TestMAin.test_windows Coverage Results" MODIFIED="1618383879421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI自动化测试框架/test_case" />
     <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_getattr_TestGetAttr_test_get_attr.coverage" NAME="pytest for test_getattr.TestGetAttr.test_get_attr Coverage Results" MODIFIED="1617262667705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/high" />
-    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_huanger_TestHunger_test_hunger_add_coin.coverage" NAME="pytest for test_huanger.TestHunger.test_hunger_add_coin Coverage Results" MODIFIED="1618465934463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_huanger_TestHunger_test_hunger_add_coin.coverage" NAME="pytest for test_huanger.TestHunger.test_hunger_add_coin Coverage Results" MODIFIED="1618907964502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_in_test_wrapper_py.coverage" NAME="pytest in test_wrapper.py Coverage Results" MODIFIED="1618907972302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_xueqiu/testcase" />
     <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_main_TestMAin.coverage" NAME="pytest for test_main.TestMAin Coverage Results" MODIFIED="1618381176044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI自动化测试框架/test_case" />
     <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_huanger_TestHunger.coverage" NAME="pytest for test_huanger.TestHunger Coverage Results" MODIFIED="1618470436057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_in_test_element_py.coverage" NAME="pytest in test_element.py Coverage Results" MODIFIED="1617099200609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
@@ -225,7 +180,7 @@
     <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_in_test_onlock_py.coverage" NAME="pytest in test_onlock.py Coverage Results" MODIFIED="1617105553276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
     <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_in_test_0330_py.coverage" NAME="pytest in test_0330.py Coverage Results" MODIFIED="1617093456730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
     <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_param_TestGetAttr_test_search.coverage" NAME="pytest for test_param.TestGetAttr.test_search Coverage Results" MODIFIED="1617270869383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/high" />
-    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_search_TestSearch_test_search.coverage" NAME="pytest for test_search.TestSearch.test_search Coverage Results" MODIFIED="1618397467009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_xueqiu/testcase" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_search_TestSearch_test_search.coverage" NAME="pytest for test_search.TestSearch.test_search Coverage Results" MODIFIED="1618910097559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_xueqiu/testcase" />
     <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_in_test_hamcrest_py.coverage" NAME="pytest in test_hamcrest.py Coverage Results" MODIFIED="1617262856655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/high" />
   </component>
 </project>

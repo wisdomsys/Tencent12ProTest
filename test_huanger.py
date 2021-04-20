@@ -31,20 +31,19 @@ class TestHunger:
 
     def teardown(self):
         # 返回
-        # self.driver.find_element()
+        # self.driver.find_element_element()
         pass
 
-    def test_hunger_add_coin(self):
-        """
-        打开饿了么
-        进入我的页面
-        点击超级吃货卡
-        点击全部任务
-        获取所有逛逛任务
-        浏览每个逛逛任务，并打印任务名称
-        完成
-        """
-        self.driver.find_element(MobileBy.ID, 'me.ele:id/img_4').click()
+    def goto_login(self):
+        self.driver.find_element(MobileBy.XPATH,
+                                 '//*[@resource-id="me.ele:id/id_magex_mistview"]/android.widget.ImageView').click()
+        self.driver.find_element(MobileBy.XPATH, '//*[@text="密码登录"]').click()
+        self.driver.find_element(MobileBy.XPATH, '//*[contains(@text,"用户名")]').send_keys('13788979815')
+        self.driver.find_element(MobileBy.XPATH, '//*[@text="密码"]').send_keys('ych19951005')
+        self.driver.find_element(MobileBy.XPATH, '//*[@text="登录"]').click()
+        self.driver.find_element(MobileBy.XPATH, '//*[@text="同意"]').click()
+
+    def get_coin(self):
         self.driver.find_element(MobileBy.XPATH, '(//*[@resource-id="me.ele:id/id_magex_mistview"])[2]').click()
         # 因为找不到查看全部任务的元素，所以得滑动屏幕
         sleep(3)
@@ -71,9 +70,26 @@ class TestHunger:
                     self.driver.find_element_by_android_uiautomator(scroll2).click()
                     sleep(17)
                     self.driver.find_element(MobileBy.XPATH, '//*[contains(@text,"返回")]').click()
-                else:
-                    print('任务均完成')
-                    return True
+                print('任务均完成')
+                break
         else:
             print('没有找到任务列表')
             return True
+
+    def test_hunger_add_coin(self):
+        """
+        打开饿了么
+        进入我的页面
+        点击超级吃货卡
+        点击全部任务
+        获取所有逛逛任务
+        浏览每个逛逛任务，并打印任务名称
+        完成
+        """
+        self.driver.find_element(MobileBy.ID, 'me.ele:id/img_4').click()
+        length = self.driver.find_elements(MobileBy.XPATH, '//*[@resource-id="me.ele:id/id_magex_mistview"]')
+        if len(length) > 5:
+            self.get_coin()
+        else:
+            self.goto_login()
+        # print(self.driver.page_source)

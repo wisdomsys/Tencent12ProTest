@@ -4,10 +4,13 @@ from appium.webdriver import WebElement
 from appium.webdriver.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 
+from appium_xueqiu.page.wrapper import handle_black
+
 
 class BasePage:
     logging.basicConfig(level=logging.INFO)
     _black_list = [
+        (By.XPATH, '//*[@resource-id="com.xueqiu.android:id/action_search"]'),
         (By.XPATH, '//*[@text="确定"]'),
         (By.XPATH, '//*[@text="允许"]'),
         (By.XPATH, '//*[@text="确认"]'),
@@ -20,58 +23,30 @@ class BasePage:
     def __init__(self, driver: WebDriver = None):
         self._driver = driver
 
-    def finds(self, locator, value):
+    def finds(self, locator, value: str = None):
+        elements: list
         if isinstance(locator, tuple):
-            elements = self._driver.find_element(*locator)
+            elements = self._driver.find_elements(*locator)
         else:
-            elements = self._driver.find_element(locator, value)
+            elements = self._driver.find_elements(locator, value)
         return elements
 
+    @handle_black
     def find(self, locator, value: str = None):
         logging.info(locator)
         logging.info(value)
         element: WebElement
-        try:
-            element = self._driver.find_element(*locator) if isinstance(locator, tuple) else self._driver.find_element(
-                locator, value)
-            # if isinstance(locator, tuple):
-            #     element = self._driver.find_element(*locator)
-            # else:
-            #     element = self._driver.find_element(locator, value)
-            self._error_num = 0
-            self._driver.implicitly_wait(10)
-            return element
-        except Exception as e:
-            self._driver.implicitly_wait(1)
-            if self._error_num > self._max_num:
-                raise e
-            self._error_num += 1
-            # 处理黑名单里面的弹窗
-            for ele in self._black_list:
-                ele_list = self._driver.find_elements(*ele)
-                if len(ele_list) > 0:
-                    ele_list[0].click()
-                    return self.find(locator, value)
-            raise e
+        if isinstance(locator, tuple):
+            element = self._driver.find_element(*locator)
+        else:
+            element = self._driver.find_element(locator, value)
+        return element
 
+    @handle_black
     def find_get_text(self, locator, value: str = None):
         element: WebElement
-        try:
-            element_text = self._driver.find_element(*locator).text if isinstance(locator,
-                                                                                  tuple) else self._driver.find_element(
-                locator, value).text
-            self._error_num = 0
-            self._driver.implicitly_wait(10)
-            return element_text
-        except Exception as e:
-            self._driver.implicitly_wait(1)
-            if self._error_num > self._max_num:
-                raise e
-            self._error_num += 1
-            # 处理黑名单里面的弹窗
-            for ele in self._black_list:
-                ele_list = self._driver.find_elements(*ele)
-                if len(ele_list) > 0:
-                    ele_list[0].click()
-                    return self.find(locator, value)
-            raise e
+        if isinstance(locator, tuple):
+            element_text = self._driver.find_element(*locator).text
+        else:
+            element_text = self._driver.find_element(locator, value).text
+        return element_text
