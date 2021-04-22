@@ -1,3 +1,4 @@
+# 装饰器原理
 def extend(func):
     def hello(*args, **kwargs):
         print('hello')
@@ -15,10 +16,10 @@ def tmp(a, b, c, d):
 
 
 @extend
-def tmp1():
+def tmp1(a):
     print('tmp1')
 
 
 def test_wrapper():
-    tmp(1, 2, 3, d=10)
-    tmp1()
+    # tmp(1, 2, 3, d=10)
+    tmp1(1)

@@ -23,6 +23,7 @@ class TestSnowXpath:
         self.driver.find_element(By.XPATH, "//*[@resource-id='com.xueqiu.android:id/name' and @text='阿里巴巴']").click()
         self.driver.find_element(By.XPATH,
                                  '//*[@resource-id="com.xueqiu.android:id/title_text" and @text="股票"]').click()
+        # 并且搜索
         # self.driver.find_element(By.XPATH,"//*[@resource-id='com.xueqiu.android:id/stockCode' and @text=09988]")
         path = "//*[@text='09988']/../../..//*[@resource-id='com.xueqiu.android:id/current_price']"
         # path = "//*[@text='09988']"

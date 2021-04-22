@@ -8,7 +8,7 @@ def handle_black(func):
             (By.XPATH, '//*[@text="允许"]'),
             (By.XPATH, '//*[@text="确认"]'),
             (By.ID, 'com.xueqiu.android:id/tv_agree'),
-            (By.XPATH, '//*[@text="下次再说"]')
+            (By.XPATH, '//*[@text="下次再说"]'),
         ]
         _max_num = 3
         _error_num = 0
@@ -21,7 +21,9 @@ def handle_black(func):
             instance._driver.implicitly_wait(10)
             return element
         except Exception as e:
+            # 出现异常，隐式等待时间设置小一点，快速的处理弹窗
             instance._driver.implicitly_wait(1)
+            # 判断异常处理次数
             if _error_num > _max_num:
                 raise e
             _error_num += 1
@@ -30,6 +32,7 @@ def handle_black(func):
                 ele_list = instance.finds(*ele)
                 if len(ele_list) > 0:
                     ele_list[0].click()
+                    # 处理完弹窗再去查找元素目标
                     return wrapper(*args, **kwargs)
             raise e
 
