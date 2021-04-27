@@ -1,3 +1,4 @@
+import yaml
 from selenium.webdriver.common.by import By
 
 from appium_xueqiu.page.base_page import BasePage
@@ -5,15 +6,13 @@ from appium_xueqiu.page.base_page import BasePage
 
 class Search(BasePage):
     def search(self, name):
-        # send alibaba
-        # click
-        # ...
-        self.find(By.ID, 'com.xueqiu.android:id/search_input_text').send_keys('alibaba')
-        self.find(By.XPATH, f'//*[@text="{name}"]').click()
-        self.find(By.XPATH,
-                  f'//*[contains(@resource-id,"stock_item_container")]//*[@text="{name}"]/../..//*[@text="加自选"]').click()
+        self.steps('../data/search1.yaml')
 
     def is_choose(self, name):
-        ele = self.finds(By.XPATH,
-                         f'//*[contains(@resource-id,"stock_item_container")]//*[@text="{name}"]/../..//*[@text="已添加"]')
-        return len(ele) > 0
+        return self.steps('../data/search2.yaml')
+
+    def reset(self, reset):
+        return self.steps('../data/search3.yaml')
+
+# ele = self.finds(By.XPATH,
+# f'//*[contains(@resource-id,"stock_item_container")]//*[@text="{name}"]/../..//*[@text="已添加"]')

@@ -1,5 +1,6 @@
 import logging
 
+import yaml
 from appium.webdriver import WebElement
 from appium.webdriver.webdriver import WebDriver
 from selenium.webdriver.common.by import By
@@ -50,3 +51,18 @@ class BasePage:
         else:
             element_text = self._driver.find_element(locator, value).text
         return element_text
+
+    def steps(self, path):
+        with open(path) as f:
+            steps = yaml.safe_load(f)
+        for step in steps:
+            if 'action' in step.keys():
+                action = step['action']
+                if 'click' == action:
+                    self.find(step['by'], step['locator']).click()
+                if 'send' == action:
+                    self.find(step['by'], step['locator']).send_keys(step['value'])
+                if 'len > 0' == action:
+                    ele = self.finds(step['by'], step['locator'])
+                    print('长度是：', len(ele))
+                    return len(ele) > 0

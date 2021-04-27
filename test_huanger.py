@@ -12,7 +12,7 @@ class TestHunger:
             "deviceName": "Q5S5T19424004010",
             "appPackage": 'me.ele',
             "appActivity": 'me.ele.Launcher',
-            # 'noReset': True
+            'noReset': True
         }
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
         self.driver.implicitly_wait(10)
