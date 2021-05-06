@@ -1,0 +1,2 @@
+[1m[31mERROR   [0m root:wrapper.py:34 element not found,handle black list
+[1m[31mERROR   [0m root:wrapper.py:34 element not found,handle black list
