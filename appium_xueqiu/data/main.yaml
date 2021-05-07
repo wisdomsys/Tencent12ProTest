@@ -1,3 +1,4 @@
-- by: xpath
-  locator: '(//*[@resource-id="com.xueqiu.android:id/tab_icon"])[2]'
-  action : click
+goto_market:
+  - by: xpath
+    locator: '(//*[@resource-id="com.xueqiu.android:id/tab_icon"])[2]'
+    action : click

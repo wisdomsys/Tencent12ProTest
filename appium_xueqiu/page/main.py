@@ -7,5 +7,5 @@ class Main(BasePage):
         # 行情页面
         # self.find(By.XPATH, '(//*[@resource-id="com.xueqiu.android:id/tab_icon"])[2]').click()
         # return Market(self._driver)
-        self.steps('../data/main.yaml')
+        self.steps('../data/main.yaml', 'goto_market')
         return Market(self._driver)
