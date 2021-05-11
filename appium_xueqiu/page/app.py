@@ -16,7 +16,7 @@ class App(BasePage):
             caps['appPackage'] = desi_read['appPackage']
             caps['appActivity'] = desi_read['appActivity']
             caps['noReset'] = desi_read['noReset']
-            caps['udid'] = desi_read['udid']
+            caps['udid'] = 'emulator-5554'
             # 初始化driver
             self._driver = webdriver.Remote('http://localhost:4723/wd/hub', caps)
         else:
