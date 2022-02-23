@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ec8e61b6-0e5d-4a3e-a6a6-89adb6d5d7e6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Tencent12ProTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Tencent12ProTest.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="25UwoF051stMzykqWlnM89uTGBz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/接口自动化测试/企业微信实战" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/接口自动化测试/企业微信实战" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="pytest for test_request_update.test_all" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Tencent12ProTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ApiTest/企业微信实战" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_request_update.test_all&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest for test_request_update.test_all" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec8e61b6-0e5d-4a3e-a6a6-89adb6d5d7e6" name="Default Changelist" comment="" />
+      <created>1645595146692</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645595146692</updated>
+      <workItem from="1645595150106" duration="87000" />
+      <workItem from="1645595239872" duration="11468000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_request_update_test_create_data.coverage" NAME="pytest for test_request_update.test_create_data Coverage Results" MODIFIED="1645608393327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/接口自动化测试/企业微信实战" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_authorization_test_authorization.coverage" NAME="pytest for authorization.test_authorization Coverage Results" MODIFIED="1645597601667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/接口自动化测试" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_request_test_read_pepper.coverage" NAME="pytest for test_request.test_read_pepper Coverage Results" MODIFIED="1645600907211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/接口自动化测试/企业微信实战" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_request_test_delete.coverage" NAME="pytest for test_request.test_delete Coverage Results" MODIFIED="1645601472916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/接口自动化测试/企业微信实战" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_request_test_update_department.coverage" NAME="pytest for test_request.test_update_department Coverage Results" MODIFIED="1645602114612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/接口自动化测试/企业微信实战" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_in_authorization_py.coverage" NAME="pytest in authorization认证.py Coverage Results" MODIFIED="1645596658668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/接口自动化测试" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_request_test_create_department.coverage" NAME="pytest for test_request.test_create_department Coverage Results" MODIFIED="1645602102197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/接口自动化测试/企业微信实战" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_request_test_add_pepper.coverage" NAME="pytest for test_request.test_add_pepper Coverage Results" MODIFIED="1645600920346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/接口自动化测试/企业微信实战" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_request_test_demo.coverage" NAME="pytest for test_request.test_demo Coverage Results" MODIFIED="1645598613945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/接口自动化测试/企业微信实战" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_request_update_test_all.coverage" NAME="pytest for test_request_update.test_all Coverage Results" MODIFIED="1645609113560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ApiTest/企业微信实战" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_request_test_delete_department.coverage" NAME="pytest for test_request.test_delete_department Coverage Results" MODIFIED="1645602162664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/接口自动化测试/企业微信实战" />
+    <SUITE FILE_PATH="coverage/Tencent12ProTest$pytest_for_test_request_test_update.coverage" NAME="pytest for test_request.test_update Coverage Results" MODIFIED="1645601338220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/接口自动化测试/企业微信实战" />
+  </component>
+</project>
